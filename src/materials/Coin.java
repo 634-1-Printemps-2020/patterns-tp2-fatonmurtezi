@@ -1,8 +1,12 @@
 package materials;
 
+import java.util.Random;
+
 public class Coin {
 
-  private CoinState coinState;
+  private static Coin coinState = new Coin();
+  private CoinState pileOuFace ;
+
 
   /**
    * Change l'état de la pièce.
@@ -10,10 +14,27 @@ public class Coin {
    */
   public void throwCoin() {
     // TODO : Votre code ici
+    Random random = new Random();
+    int pileFace = random.nextInt(2);
+    if (pileFace == 0) {
+      pileOuFace = CoinState.HEADS;
+    } else {
+      pileOuFace = CoinState.TAILS;
+    }
   }
 
-  public CoinState getState() {
+  private Coin() {
+
+  }
+
+  public static Coin getInstance() {
     return coinState;
+  }
+
+
+  public CoinState getState() {
+
+    return pileOuFace;
   }
 
 

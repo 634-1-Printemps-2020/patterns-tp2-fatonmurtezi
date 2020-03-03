@@ -24,12 +24,22 @@ public class Game {
      */
     public void addPlayer(Player player) {
       // TODO: Votre code ici
+        List<CoinState> list = null;
+        history.put(player,list);
     }
 
     /**
      * Faire joueur tous les joueurs et stocker chaque partie dans history
      */
     public void play() {
+        for (Map.Entry<Player,List<CoinState>> listJoueurs : history.entrySet()){
+            System.out.println(listJoueurs.getKey());
+            coin = Coin.getInstance();
+            listJoueurs.getKey().play(coin);
+            listJoueurs.getKey().play(coin);
+            //faire jouer
+            System.out.println(coin.getState());
+        }
       // TODO: Votre code ici
     }
 

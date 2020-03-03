@@ -14,4 +14,10 @@ public class Player {
     coin.throwCoin();
   }
 
+  @Override
+  public String toString() {
+    return "Player{" +
+            "id=" + id +
+            '}';
+  }
 }
