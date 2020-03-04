@@ -33,12 +33,22 @@ public class Game {
      */
     public void play() {
         for (Map.Entry<Player,List<CoinState>> listJoueurs : history.entrySet()){
-            System.out.println(listJoueurs.getKey());
+
             coin = Coin.getInstance();
             listJoueurs.getKey().play(coin);
-            listJoueurs.getKey().play(coin);
-            //faire jouer
-            System.out.println(coin.getState());
+            List<CoinState> list = listJoueurs.getValue();
+            list.add(coin.getState());
+            history.put(listJoueurs.getKey(),list);
+
+            while (coin.getState()!=CoinState.HEADS){
+                listJoueurs.getKey().play(coin);
+                listJoueurs.getKey().play(coin);
+                list = listJoueurs.getValue();
+                list.add(coin.getState());
+                history.put(listJoueurs.getKey(),list);
+            }
+
+
         }
       // TODO: Votre code ici
     }

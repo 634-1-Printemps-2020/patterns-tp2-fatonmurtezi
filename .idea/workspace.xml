@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c32d158-fa13-4c1e-8219-09e621954e3b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3c32d158-fa13-4c1e-8219-09e621954e3b" name="Default" comment="ajout du play">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/materials/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/materials/Coin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,8 +104,17 @@
       <workItem from="1582451168644" duration="2608000" />
       <workItem from="1582453825522" duration="378000" />
       <workItem from="1583009869040" duration="1883000" />
-      <workItem from="1583249681530" duration="2650000" />
+      <workItem from="1583249681530" duration="3939000" />
+      <workItem from="1583337579742" duration="987000" />
     </task>
+    <task id="LOCAL-00001" summary="ajout du play">
+      <created>1583252415491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583252415491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +132,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajout du play" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout du play" />
   </component>
   <component name="WindowStateProjectService">
     <state x="730" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1582451659529">
