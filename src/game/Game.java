@@ -106,7 +106,8 @@ public class Game {
      */
     public List<CoinState> getSpecificHistory(Player player) {
       // TODO: Votre code ici
-      return null;
+
+        return history.get(player);
     }
 
 }
