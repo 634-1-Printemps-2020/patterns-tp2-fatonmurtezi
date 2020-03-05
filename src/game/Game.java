@@ -64,7 +64,24 @@ public class Game {
      */
     public Statistics getStatistics() {
       // TODO: Votre code ici
-      return null;
+
+
+        //float averageToWin, int fewerMovesToWin, int mostMovesToWin, int totalNumberMoves) {
+        int totalPlayed =0;
+        int fewMoveWin = Integer.MAX_VALUE;
+        int mostMoveWin = 0;
+        for (Map.Entry<Player,List<CoinState>> listJoueurs : history.entrySet()) {
+            if (listJoueurs.getValue().size()+1<fewMoveWin){
+                fewMoveWin = listJoueurs.getValue().size()+1;
+            }
+            if (listJoueurs.getValue().size()+1>mostMoveWin){
+                mostMoveWin = listJoueurs.getValue().size()+1;
+            }
+            totalPlayed+=listJoueurs.getValue().size();
+        }
+            float average = (float)totalPlayed/history.size();
+        Statistics stat = new Statistics(average,fewMoveWin,mostMoveWin,totalPlayed);
+      return stat;
     }
 
     /**

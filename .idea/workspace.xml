@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c32d158-fa13-4c1e-8219-09e621954e3b" name="Default" comment="play tant que pas fait 3x pile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3c32d158-fa13-4c1e-8219-09e621954e3b" name="Default" comment="getHistory() ok">
       <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Rules.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,6 +106,7 @@
       <workItem from="1583249681530" duration="3939000" />
       <workItem from="1583337579742" duration="1298000" />
       <workItem from="1583400185875" duration="1362000" />
+      <workItem from="1583403915518" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="ajout du play">
       <created>1583252415491</created>
@@ -123,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583338623204</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="getHistory() ok">
+      <created>1583403994561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583403994561</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +151,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout du play" />
     <MESSAGE value="play tant que pas fait 3x pile" />
-    <option name="LAST_COMMIT_MESSAGE" value="play tant que pas fait 3x pile" />
+    <MESSAGE value="getHistory() ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="getHistory() ok" />
   </component>
   <component name="WindowStateProjectService">
     <state x="730" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1582451659529">
