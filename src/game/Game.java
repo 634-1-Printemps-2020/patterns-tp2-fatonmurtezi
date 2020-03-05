@@ -5,6 +5,7 @@ import materials.CoinState;
 import player.Player;
 import utils.Statistics;
 
+import javax.swing.*;
 import java.util.*;
 
 public class Game {
@@ -12,6 +13,8 @@ public class Game {
     private Rules rules;
     private Coin coin;
     private Map<Player, List<CoinState>> history;
+    private Map<Player, List<CoinState>> listPrevious;
+
 
     public Game() {
         history = new HashMap<>();
@@ -24,7 +27,7 @@ public class Game {
      */
     public void addPlayer(Player player) {
       // TODO: Votre code ici
-        List<CoinState> list = null;
+        List<CoinState> list = new ArrayList<>();
         history.put(player,list);
     }
 
@@ -36,12 +39,13 @@ public class Game {
 
             coin = Coin.getInstance();
             listJoueurs.getKey().play(coin);
-            List<CoinState> list = listJoueurs.getValue();
+            List<CoinState> list = new ArrayList<>();
             list.add(coin.getState());
-            history.put(listJoueurs.getKey(),list);
 
-            while (coin.getState()!=CoinState.HEADS){
-                listJoueurs.getKey().play(coin);
+            history.put(listJoueurs.getKey(),list);
+            rules = new Rules();
+            while (!rules.checkWin(list)){
+
                 listJoueurs.getKey().play(coin);
                 list = listJoueurs.getValue();
                 list.add(coin.getState());
@@ -70,7 +74,10 @@ public class Game {
      */
     public Map<Player, List<CoinState>> getHistory() {
       // TODO: Votre code ici
-      return null;
+        
+
+        listPrevious = history;
+      return listPrevious;
     }
 
 
